@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: "Outfit";
+    background: linear-gradient(#ecf2f8, #a0c0de);
+}
+
+.contact-container {
+    background-color: #132638;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #3bc456;
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr, .services-left hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #3bc456;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-us-right hr, .quote hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #132638;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid #f37513;
+}
+
+.contact-inputs::placeholder {
+    color: #808080;
+}
+
+nav button, .parallax button, .contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: none;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #3bc456, #141539);
+    cursor: pointer;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-right h6 {
+    font-weight: 600;
+    color: #808080;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+h1 {
+    background: transparent;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    vertical-align: baseline;
+    outline: none;
+    font-size: 100%;
+    font-family: inherit;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 56px;
+    color: #3bc456;
+}
+
+.parallax {
+    background-image: url("https://img.freepik.com/free-photo/many-transport-trucks-parked-service-station-sunset-ai-generative_123827-23416.jpg?t=st=1718055221~exp=1718058821~hmac=04c02d303b4ba74305be79735ff2776227fa2f23d77d1a5b7dc65f1713cafa5e&w=740");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #132638;
+}
+
+li {
+    font-size: 24px;
+    float: right;
+    display: block;
+    color: #f37513;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.btn {
+    color: #f37513;
+}
+
+.logo {
+    width: 200px;
+    height: 80px;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #222222;
+    color: white;
+}
+
+.about-us {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-us h2, .quote h2 {
+    color: #132638;
+    font-size: 48px;
+}
+
+.about-us-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.about-us-left img {
+    width: 500px;
+}
+
+.about-us-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-block-start:0;
+    margin-block-end:.9rem;
+}
+
+.about-us-right p {
+    font-size: 24px;
+    float: left;
+    color: #f37513;
+}
+
+.services {
+    background-color: #132638;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.services h2 {
+    color: #3bc456;
+    font-size: 48px;
+}
+
+.services p {
+    color: #808080;
+    font-size: 24px;
+}
+
+.services-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.services-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.services-right img {
+    width: 500px;
+}
+
+@media (max-width:800px) {
+    .contact-inputs {
+        width: 80vw;
+    }
+    .contact-right {
+        display: inline-block; 
+        text-align: center; 
+        position: absolute !important;
+        bottom: 0px !important;
+    }
+    .parallax {
+        background-attachment: scroll;
+      }
+    .about-us-left {
+        display: none;
+     }
+    .services-right {
+       display: none;
+    }
+}
