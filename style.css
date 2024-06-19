@@ -238,9 +238,6 @@ footer {
 }
 
 @media (max-width:800px) {
-    .contact-inputs {
-        width: 80vw;
-    }
     .contact-left {
         display: flex;
         width: 200px;
