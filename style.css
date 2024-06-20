@@ -31,7 +31,7 @@ main {
     margin-bottom: 5px;
 }
 
-.contact-left-title hr, .services-left hr {
+.success hr, .contact-left-title hr, .services-left hr {
     border: none;
     width: 120px;
     height: 5px;
@@ -47,17 +47,6 @@ main {
     background-color: #132638;
     border-radius: 10px;
     margin-bottom: 20px;
-}
-
-.contact-inputs {
-    width: 400px;
-    height: 50px;
-    border: none;
-    outline: none;
-    padding-left: 25px;
-    font-weight: 500;
-    color: #666;
-    border-radius: 50px;
 }
 
 .contact-left textarea {
@@ -209,12 +198,17 @@ footer {
     justify-content: space-evenly;
 }
 
-.services h2 {
+.success {
+    background-color: #132638;
+    height: 100vh;
+}
+
+.success h2,.services h2 {
     color: #3bc456;
     font-size: 48px;
 }
 
-.services p {
+.success p, .services p {
     color: #808080;
     font-size: 24px;
 }
