@@ -6,7 +6,6 @@
 
 main {
     font-family: "Outfit";
-    background: linear-gradient(#ecf2f8, #a0c0de);
 }
 
 .contact-container {
@@ -26,7 +25,7 @@ main {
 
 .contact-left-title h2 {
     font-weight: 600;
-    color: #3bc456;
+    color: white;
     font-size: 42px;
     margin-bottom: 5px;
 }
@@ -35,7 +34,7 @@ main {
     border: none;
     width: 120px;
     height: 5px;
-    background-color: #3bc456;
+    background-color: white;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -44,7 +43,7 @@ main {
     border: none;
     width: 120px;
     height: 5px;
-    background-color: #132638;
+    background-color: black;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -63,17 +62,16 @@ main {
     color: #808080;
 }
 
-nav button, .parallax button, .contact-left button {
-    display: flex;
-    align-items: center;
-    padding: 15px 30px;
-    font-size: 16px;
-    color: #fff;
-    gap: none;
+.button {
+    background-color: #f37513;
     border: none;
-    border-radius: 50px;
-    background: linear-gradient(270deg, #3bc456, #141539);
-    cursor: pointer;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    padding-top: 18px;
 }
 
 .contact-right {
@@ -85,7 +83,7 @@ nav button, .parallax button, .contact-left button {
 
 .contact-right h6 {
     font-weight: 600;
-    color: #808080;
+    color: white;
     font-size: 18px;
     margin-bottom: 5px;
 }
@@ -103,19 +101,27 @@ h1 {
     font-weight: normal;
     font-style: normal;
     font-size: 56px;
-    color: #3bc456;
+    color: #132638;
 }
 
 .parallax {
     background-image: url("https://img.freepik.com/free-photo/many-transport-trucks-parked-service-station-sunset-ai-generative_123827-23416.jpg?t=st=1718055221~exp=1718058821~hmac=04c02d303b4ba74305be79735ff2776227fa2f23d77d1a5b7dc65f1713cafa5e&w=740");
     background-attachment: fixed;
-    background-position: center;
+    background-position-x: 0%;
+    background-position-y: 20%;
     background-size: cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 ul {
@@ -130,26 +136,44 @@ li {
     font-size: 24px;
     float: right;
     display: block;
-    color: #f37513;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.btn {
-    color: #f37513;
+a {
+    text-decoration: none;
+    color: white;
+    padding-top: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
 }
 
 .logo {
-    width: 200px;
-    height: 80px;
+    width: 300px;
+    height: 90px;
 }
 
-footer {
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    padding: 3px;
-    background-color: #222222;
-    color: white;
+    z-index: 10;
+    background-color: white;
+}
+
+.footer p {
+    font-size: 24px;
+    color: black;
+}
+
+.footer a {
+    color: black;
+    font-size: 24px;
 }
 
 .about-us {
@@ -157,10 +181,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: white;
 }
 
 .about-us h2, .quote h2 {
-    color: #132638;
+    color: black;
     font-size: 48px;
 }
 
@@ -187,7 +212,7 @@ footer {
 .about-us-right p {
     font-size: 24px;
     float: left;
-    color: #f37513;
+    color: black;
 }
 
 .services {
@@ -204,12 +229,12 @@ footer {
 }
 
 .success h2,.services h2 {
-    color: #3bc456;
+    color: white;
     font-size: 48px;
 }
 
 .success p, .services p {
-    color: #808080;
+    color: white;
     font-size: 24px;
 }
 
