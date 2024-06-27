@@ -266,4 +266,7 @@ a {
     .services-right {
        display: none;
     }
+    .navbar {
+        position: static;
+    }
 }
